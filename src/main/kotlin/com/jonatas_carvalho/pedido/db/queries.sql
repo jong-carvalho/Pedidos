@@ -1,0 +1,5 @@
+
+CREATE TABLE IF NOT EXISTS tb_order(
+    orderId VARCHAR(255) PRIMARY KEY,
+    clientId VARCHAR(255)
+);
