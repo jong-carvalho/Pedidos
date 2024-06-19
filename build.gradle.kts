@@ -29,10 +29,11 @@ dependencies {
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 	runtimeOnly("org.postgresql:postgresql")
 
-	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-aop
-	implementation("org.springframework.boot:spring-boot-starter-aop")
-	// https://mvnrepository.com/artifact/io.github.resilience4j/resilience4j-spring-boot2
-	implementation("io.github.resilience4j:resilience4j-spring-boot2:1.7.1")
+	//	resilience4j - circuit breaker
+	implementation("io.github.resilience4j:resilience4j-spring-boot2:2.2.0")
+	implementation("org.springframework.boot:spring-boot-starter-actuator:3.3.0")
+	implementation("org.springframework.boot:spring-boot-starter-aop:3.3.0")
+
 
 }
 
