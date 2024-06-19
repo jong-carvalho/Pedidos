@@ -10,4 +10,12 @@ spring:
     property-naming-strategy: SNAKE_CASE
 
 server:
-  port: 8090
+  port: 8081
+
+resilience4j.circuitbreaker:
+  configs:
+    default:
+      registerHealthIndicator: true
+      slidingWindowSize: 10
+      minimumNumberOfCalls: 5
+

@@ -22,7 +22,7 @@ class OrderController(val logger: Logger, private val orderService: OrderService
 
     @CrossOrigin
     @PostMapping
-    fun createClient(@RequestBody orderDTO: OrderDTO): ResponseEntity<String> {
+    fun createOrder(@RequestBody orderDTO: OrderDTO): ResponseEntity<String> {
         logger.info("Criando um pedido...")
         orderService.save(orderDTO)
         return ResponseEntity.status(HttpStatus.OK).body("Pedido criado com sucesso.")

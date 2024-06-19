@@ -12,7 +12,7 @@ class OrderService(private val repository: OrderRepository, val logger: Logger) 
 
     fun findAll(): MutableList<OrderModel> {
         val allClients = repository.findAll()
-        logger.info("Todos os Clientes foram encontrados com sucesso.")
+        logger.info("Todos os pedidos foram encontrados com sucesso.")
         return allClients
     }
 

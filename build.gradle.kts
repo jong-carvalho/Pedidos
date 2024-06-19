@@ -28,6 +28,12 @@ dependencies {
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 	runtimeOnly("org.postgresql:postgresql")
+
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-aop
+	implementation("org.springframework.boot:spring-boot-starter-aop")
+	// https://mvnrepository.com/artifact/io.github.resilience4j/resilience4j-spring-boot2
+	implementation("io.github.resilience4j:resilience4j-spring-boot2:1.7.1")
+
 }
 
 kotlin {
